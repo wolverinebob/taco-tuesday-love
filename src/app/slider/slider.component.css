@@ -1,0 +1,10 @@
+img {
+    height: 450px;
+    overflow: auto;
+  }
+h1 {
+    font-family: Impact, Charcoal, sans-serif
+  }
+
+  /* TODO I may need to change 450px depending on the phone/screen. Difficult to test on a laptop 
+  Either that, or I need to reformat the photos to all fit.*/

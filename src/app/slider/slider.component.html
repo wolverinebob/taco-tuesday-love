@@ -1,0 +1,38 @@
+<button class="btn btn-light" (click)="selectRest(fortWorth[0])">{{ fortWorth[0].name }}</button>
+<button class="btn btn-light" (click)="selectRest(fortWorth[1])">{{ fortWorth[1].name }}</button>
+<button class="btn btn-light" (click)="selectRest(fortWorth[0])">{{ fortWorth[0].name }}</button>
+<button class="btn btn-light" (click)="selectRest(fortWorth[1])">{{ fortWorth[1].name }}</button>
+<h2>Mexican</h2>
+<button class="btn btn-light" (click)="selectRest(fortWorth[0])">{{ fortWorth[0].name }}</button>
+<button class="btn btn-light" (click)="selectRest(fortWorth[1])">{{ fortWorth[1].name }}</button>
+<h2>Italian</h2>
+<button class="btn btn-light" (click)="selectRest(fortWorth[0])">{{ fortWorth[0].name }}</button>
+<button class="btn btn-light" (click)="selectRest(fortWorth[1])">{{ fortWorth[1].name }}</button>
+<button class="btn btn-light" (click)="selectRest(fortWorth[1])">{{ fortWorth[1].name }}</button>
+<!-- <div *ngIf="selectedRest">
+
+    <tr *ngFor="let foodPlace of locale">
+        <td>{{ selectedRest.id }}</td>
+        <td> {{ selectedRest.name }}</td>
+        <img src="{{ selectedRest.pic3 }}"><img>
+    </tr>
+</div> -->
+<hr>
+<div *ngIf="selectedRest">
+    <h1>{{ selectedRest.name }}
+        <button class="btn btn-light" (click)="selectRest(fortWorth[1])">website</button>
+        <!-- TODO: insert URL to link the restaurant's website -->
+    </h1>
+    <div>
+            <p>What do you want? {{selectedRest.domId}}</p>
+    </div>
+    <ngb-carousel *ngIf="selectedRest" #carousel >
+        <ng-template ngbSlide *ngFor="let img of selectedRest.pics; index as i">
+        <a target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+            <img id="imgs" [src]="img" class="mx-auto d-block" alt="My image {{i + 1}} description">
+            </div>
+        </a>
+        </ng-template>
+    </ngb-carousel>
+</div>

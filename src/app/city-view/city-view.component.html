@@ -1,0 +1,31 @@
+<h1>Staying Home: Cooking/Baking</h1>
+<hr>
+<div *ngFor="let recipe of recipes; index as i">
+    <h3>{{ recipe.name}}</h3>
+    <input type="image" class="mx-auto d-block" src={{recipe.logo}} width="50%" 
+    (click)="openScrollableContent(content)" (click)="selectRecipe(recipe)"/>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h2 class="modal-title">{{ selectedRecipe.name }}</h2>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <ngb-carousel #carousel >
+            <ng-template ngbSlide *ngFor="let img of selectedRecipe.text; index as i">
+            <a target="_blank" rel="nofollow noopener noreferrer">
+                <div class="picsum-img-wrapper">
+                <img id="imgs" [src]="img" class="mx-auto d-block" width="100%" alt="Recipe {{i + 1}}">
+                </div>
+            </a>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    <div class="modal-footer">
+        <!-- <a class="btn btn-success" href={{getMap()}} role="button">map</a>
+        <a class="btn btn-primary" href={{selectedRest.url}} role="button">website</a> -->
+    </div>
+</ng-template>

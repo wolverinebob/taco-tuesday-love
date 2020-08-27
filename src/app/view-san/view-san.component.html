@@ -1,0 +1,35 @@
+<h1>SAN DIEGO, CA</h1>
+<hr>
+<div *ngFor="let place of locale; index as i">
+    <input type="image" class="mx-auto d-block" src={{place.logo}} width="50%" (click)="openVerticallyCentered(content)" 
+    (click)="selectRest(place)"/>
+</div>
+<!-- EVERYTHING BELOW THIS CUT LINE FUNCTIONS PROPERLY -->
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h2 class="modal-title">{{ selectedRest.name }}</h2>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <!-- INSERTING THE SLIDER -->
+        <ngb-carousel #carousel >
+            <ng-template ngbSlide *ngFor="let img of selectedRest.pics; index as i">
+            <a target="_blank" rel="nofollow noopener noreferrer">
+                <div class="picsum-img-wrapper">
+                <img id="imgs" [src]="img" class="mx-auto d-block" width="100%" alt="My image {{i + 1}} description">
+                </div>
+            </a>
+            </ng-template>
+        </ngb-carousel>
+        <!-- SLIDER INSERTED ABOVE -->
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-success" href={{getMap()}} role="button">map</a>
+        <a class="btn btn-primary" href={{selectedRest.url}} role="button">website</a>
+    </div>
+  </ng-template>
+
+

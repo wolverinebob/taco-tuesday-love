@@ -1,0 +1,30 @@
+.dark-modal .modal-content {
+    background-color: #292b2c;
+    color: white;
+  }
+  .dark-modal .close {
+    color: white;
+  }
+  /* .light-blue-backdrop {
+    background-color: #5cb3fd;
+  } */
+
+img.logo {
+    height: auto;
+    width: 50%;
+}
+h1 {
+    font-family: Impact, Charcoal, sans-serif
+  }
+h2 {
+    font-family: Arial Black, "Times New Roman", serif
+  }
+h3 {
+    font-family: Impact, Charcoal, sans-serif
+  }
+.carousel-control-prev-icon{
+    background-image: url("../../assets/left_arrow.png")
+ }
+.carousel-control-next-icon{
+   background-image: url("../../assets/right_arrow.png")
+ }
