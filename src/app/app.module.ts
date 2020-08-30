@@ -20,6 +20,7 @@ import { ViewDFWComponent } from './view-dfw/view-dfw.component';
 import { ViewPHLComponent } from './view-phl/view-phl.component';
 import { ViewBOSComponent } from './view-bos/view-bos.component';
 import { ViewSRQComponent } from './view-srq/view-srq.component';
+import { ViewNYCComponent } from './view-nyc/view-nyc.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ViewSRQComponent } from './view-srq/view-srq.component';
     ViewDFWComponent,
     ViewPHLComponent,
     ViewBOSComponent,
-    ViewSRQComponent
+    ViewSRQComponent,
+    ViewNYCComponent
   ],
   imports: [
     BrowserModule,

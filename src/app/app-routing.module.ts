@@ -1,3 +1,4 @@
+import { ViewNYCComponent } from './view-nyc/view-nyc.component';
 import { ViewDFWComponent } from './view-dfw/view-dfw.component';
 import { ViewPHLComponent } from './view-phl/view-phl.component';
 import { ViewSRQComponent } from './view-srq/view-srq.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: "phl", component: ViewPHLComponent},
   {path: "srq", component: ViewSRQComponent},
   {path: "san", component: ViewSANComponent},
-  {path: "bos", component: ViewBOSComponent}
+  {path: "bos", component: ViewBOSComponent},
+  {path: "nyc", component: ViewNYCComponent}
   // { path: '**', component:  HomeComponent}
 ];
 

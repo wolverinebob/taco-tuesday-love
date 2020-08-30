@@ -227,6 +227,52 @@ export class DataService {
 // },
     
   ];
+  nYCRest = [
+    {
+      type: "Italian",
+      name: "Don Angie",
+      logo: "../../assets/nyc/DA-logo.png",
+      pics: [
+        "../../assets/nyc/DA-yummy.jpg",
+        "../../assets/nyc/DA-antipasto.jpg",
+        "../../assets/nyc/DA-steak.jpg"
+      ],
+      url: "https://www.donangie.com/"
+    },
+    {
+      type: "Steakhouse",
+      name: "4 Charles Prime Rib",
+      logo: "../../assets/nyc/4CPR-logo.png",
+      pics: [
+        "../../assets/nyc/4CPR-steak.webp",
+        "../../assets/nyc/4CPR-meal.webp",
+        "../../assets/nyc/4CPR-burger.webp"
+      ],
+      url: "http://www.nycprimerib.com/"
+    },
+    {
+      type: "Bar",
+      name: "Tokyo Record Bar",
+      logo: "../../assets/nyc/TRB-logo.png",
+      pics: [
+        "../../assets/nyc/TRB-bar.jpg",
+        "../../assets/nyc/TRB-sammie.jpg",
+        "../../assets/nyc/TRB-sushi"
+      ],
+      url: "https://www.tokyorecordbar.com/"
+    },
+    {
+      type: "Seafood",
+      name: "Gramercy Tavern",
+      logo: "../../assets/nyc/GT-logo.png",
+      pics: [
+        "../../assets/nyc/GT-lobster-salad.jpg",
+        "../../assets/nyc/GT-bbry-pie.jpg",
+        "../../assets/nyc/GT-bbry-pie.jpg"
+      ],
+      url: "https://www.gramercytavern.com/"
+    },
+  ];
   sarasotaRest = [
     {
       type: "sweets",
@@ -391,6 +437,9 @@ export class DataService {
   }
   public getBoston():Array<{type, name, logo, pics, url}>{
     return this.bostonRest
+  }
+  public getNYC():Array<{type, name, logo, pics, url}>{
+    return this.nYCRest
   }
   public getPhilly():Array<{type, name, logo, pics, url}>{
     return this.phillyRest
