@@ -178,7 +178,7 @@ export class DataService {
         "../../assets/fw/LFMex-enchiladas.jpg",
         "../../assets/fw/LFMex-marg.jpg"
       ],
-      url: "https://www.cousinsbbq.com/"
+      url: "https://la-familia-mexican-restaurant.business.site/"
     },
     {
       type: "sweets",
@@ -276,14 +276,11 @@ export class DataService {
   sarasotaRest = [
     {
       type: "sweets",
-      name: "Federal Doughnuts",
+      name: "Boca Sarasota",
       logo: "../../assets/imgs/FedNuts-logo.png",
       pics: [
-        "../../assets/imgs/FedNuts-pack6.jpg",
-        "../../assets/imgs/FedNuts-chiksam.jpg",
-        "../../assets/imgs/FedNuts-baby.jpg"
       ],
-      url: "https://www.federaldonuts.com/"
+      url: "http://www.bocasarasota.com/"
     }
   ];
   phillyRest = [
