@@ -193,6 +193,17 @@ export class DataService {
     },
     {
       type: "sweets",
+      name: "Schakolad Chocolate Factory",
+      logo: "../../assets/fw/SCF-logo.jpeg",
+      pics: [
+        "../../assets/fw/SCF-chocobites.jpg",
+        "../../assets/fw/SCF-strawberries.jpg",
+        "../../assets/fw/SCF-chocobar.jpg"
+      ],
+      url: "https://schakolad.com/"
+    },
+    {
+      type: "sweets",
       name: "Steel City Pops",
       logo: "../../assets/fw/SCP-logo.svg",
       pics: [
@@ -202,17 +213,6 @@ export class DataService {
         "../../assets/fw/SCP-FlavorGif.gif"
       ],
       url: "https://steelcitypops.com/"
-    },
-    {
-      type: "sweets",
-      name: "Schakolad Chocolate Factory",
-      logo: "../../assets/fw/SCF-logo.jpeg",
-      pics: [
-        "../../assets/fw/SCF-chocobites.jpg",
-        "../../assets/fw/SCF-strawberries.jpg",
-        "../../assets/fw/SCF-chocobar.jpg"
-      ],
-      url: "https://schakolad.com/"
     }
 //   {
 //   type: "sweets",
@@ -231,7 +231,7 @@ export class DataService {
     {
       type: "Italian",
       name: "Don Angie",
-      logo: "../../assets/nyc/DA-logo.png",
+      logo: "../../assets/nyc/DA-logoM.png",
       pics: [
         "../../assets/nyc/DA-yummy.jpg",
         "../../assets/nyc/DA-antipasto.jpg",
@@ -242,7 +242,7 @@ export class DataService {
     {
       type: "Steakhouse",
       name: "4 Charles Prime Rib",
-      logo: "../../assets/nyc/4CPR-logo.png",
+      logo: "../../assets/nyc/4CPR-logoBk.png",
       pics: [
         "../../assets/nyc/4CPR-steak.webp",
         "../../assets/nyc/4CPR-meal.webp",
@@ -253,21 +253,21 @@ export class DataService {
     {
       type: "Bar",
       name: "Tokyo Record Bar",
-      logo: "../../assets/nyc/TRB-logo.png",
+      logo: "../../assets/nyc/TRB-logoW.jpg",
       pics: [
         "../../assets/nyc/TRB-bar.jpg",
         "../../assets/nyc/TRB-sammie.jpg",
-        "../../assets/nyc/TRB-sushi"
+        "../../assets/nyc/TRB-sushi.jpg"
       ],
       url: "https://www.tokyorecordbar.com/"
     },
     {
       type: "Seafood",
       name: "Gramercy Tavern",
-      logo: "../../assets/nyc/GT-logo.png",
+      logo: "../../assets/nyc/GT-logoGr.png",
       pics: [
         "../../assets/nyc/GT-lobster-salad.jpg",
-        "../../assets/nyc/GT-bbry-pie.jpg",
+        "../../assets/nyc/GT-shrimp-dumplings.jpg",
         "../../assets/nyc/GT-bbry-pie.jpg"
       ],
       url: "https://www.gramercytavern.com/"
@@ -418,6 +418,17 @@ export class DataService {
         "../../assets/imgs/DZH-tray.jpg"
       ],
       url: "https://www.dizengoffhummus.com/"
+    },
+    {
+      type: "British",
+      name: "The Dandelion",
+      logo: "../../assets/imgs/Dandy-logoY.png",
+      pics: [
+        "../../assets/imgs/Dandy-brunch.jpg",
+        "../../assets/imgs/Dandy-lunch.jpg",
+        "../../assets/imgs/Dandy-dessert.jpg"
+      ],
+      url: "https://thedandelionpub.com/"
     }
   ]
 
