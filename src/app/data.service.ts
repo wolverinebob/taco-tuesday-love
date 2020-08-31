@@ -384,6 +384,17 @@ export class DataService {
       url: "https://www.pizzeriavetri.com/"
     },
     {
+      type: "Sandwiches",
+      name: "Dalessandro's",
+      logo: "../../assets/imgs/DC-logo.jpg",
+      pics: [
+        "../../assets/imgs/DC-cheesey.jpg",
+        "../../assets/imgs/DC-cheesesteak.jpg",
+        "../../assets/imgs/DC-hoagie.jpg"
+      ],
+      url: "https://dalessandros.com/"
+    },
+    {
       type: "Italian",
       name: "Villa di Roma",
       logo: "../../assets/imgs/VdR-logo.png",

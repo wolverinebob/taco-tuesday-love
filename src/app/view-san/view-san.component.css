@@ -14,13 +14,13 @@ img.logo {
     width: 50%;
 }
 h1 {
-    font-family: Impact, Charcoal, sans-serif
+    font-family: Russo One, Impact, Charcoal, sans-serif
   }
 h2 {
     font-family: Arial Black, "Times New Roman", serif
   }
 h3 {
-    font-family: Impact, Charcoal, sans-serif
+    font-family: Impact, Russo One, Charcoal, sans-serif
   }
 .carousel-control-prev-icon{
     background-image: url("../../assets/left_arrow.png")
