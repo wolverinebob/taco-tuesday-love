@@ -244,9 +244,9 @@ export class DataService {
       name: "4 Charles Prime Rib",
       logo: "../../assets/nyc/4CPR-logoBk.png",
       pics: [
-        "../../assets/nyc/4CPR-steak.webp",
-        "../../assets/nyc/4CPR-meal.webp",
-        "../../assets/nyc/4CPR-burger.webp"
+        "../../assets/nyc/4CPR-steak.jpg",
+        "../../assets/nyc/4CPR-meal.jpg",
+        "../../assets/nyc/4CPR-burger.jpg"
       ],
       url: "http://www.nycprimerib.com/"
     },
